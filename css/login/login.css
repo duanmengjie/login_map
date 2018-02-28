@@ -1,0 +1,515 @@
+html{width:100%;}
+body.signin {
+    height: auto;
+    background:#00459f url("../../img/login/login_bg.jpg") no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgba(255,255,255,.95);
+}
+.footer_main{
+	background: #000a13; 
+	width: 100%; 
+	height: 56px; 
+	line-height: 56px; 
+	color: #fff; 
+	font-size: 14px; 
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.login_main{
+	width: 75%;
+	margin: 10% auto 0;
+}
+.login_left{
+	float: left;
+    overflow: hidden;
+	/*background: #ccc;*/
+}
+.login_right{
+	float: right;
+}
+#ChinaMap4{
+    left: -70px;
+    z-index: 20;
+}
+.login_from{
+	width: 479px;
+	height: 492px;
+	margin: 0 auto;
+	padding: 0 50px;
+	background: url('../../img/login/login_form.png') no-repeat center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.form_title{
+	font-weight: normal;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+}
+.form_group{
+    width: 100%;
+    position: relative;
+}
+.form_group span{
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+}
+.form_control{
+    border:0;
+    border-bottom: solid 1px #3d89d3;
+    display: block;
+    color: #fff;
+    background: none;
+    margin-bottom: 20px;
+    text-indent: 50px;
+}
+::-webkit-input-placeholder {/*Chrome/Safari*/
+    color:#fff;
+    }
+:-moz-placeholder {  /* Mozilla Firefox 4 to 18*/ 
+　　color:#fff;
+　　}
+::-moz-placeholder {  /* Mozilla Firefox 19+*/ 
+　　color:#fff;
+　　}
+:-ms-input-placeholder { /* Internet Explorer 10+*/ 
+　　color:#fff;
+}
+.code{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.code img{
+    width: 100%;
+}
+.login_from .btn_default{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border:solid 1px #5d92d1;
+    border-radius: 10px;
+    background:none;
+    color: #fff;
+}
+.login_from .btn_default:hover{
+    background: #fff;
+    color: #005cbb;
+}
+.login_erro{
+    color: #fff;
+    /*background: url("../../img/login/erro_Bg.png") no-repeat;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+.maskbg{
+    background: #000;
+    opacity: 0.7;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+.jiantou{
+    width: 10px;
+    height: 19px;
+    background: url(../../img/login/erro_icon2.png) no-repeat;
+    position: absolute; 
+    left: -9px;
+    top: 50%;
+    margin-top: -10px;
+}
+.yzm_box{
+    position: absolute;
+    z-index: 5;
+}
+.stateTip, #StateTip{display:none; position:absolute; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size:12px; font-family:Tahoma; color:#fff; width: 290px; color: #000; overflow: hidden;}
+.maptitle{background: #1f6dec; font-size: 16px; text-align: center; height: 30px; line-height: 30px; padding: 8px 0; color: #fff; border-radius: 5px 5px 0 0; position: relative; z-index: 30;}
+.closebtn{color: #fff; font-size: 16px; position: absolute; right: 5px; top: 5px; font-style: normal; padding: 3px 10px; cursor: pointer;}
+.map_main{background: #fff; padding: 0 0;max-height: 300px;overflow-x: hidden;}
+.map_row{border-bottom: solid 1px #dfdfdf; padding: 12px 25px 12px 20px; }
+.map_row a{font-size: 14px;}
+.map_row img{ vertical-align: middle; margin-left: 10px; display: inline-block;}
+.map_row .company_name{display: inline-block; padding-left: 10px; color: #333333; font-size: 14px;}
+.map_row:nth-last-child(1){border-bottom: 0;}
+.map_row:hover{background: #f0f0f0;}
+.mapInfo i{ display:inline-block; width:15px; height:15px; margin-top:5px; line-height:15px; font-style:normal; background:#aeaeae; color:#fff; font-size:11px; font-family: Tahoma; -webkit-border-radius:15px; border-radius:15px; text-align:center}
+.mapInfo i.active{background:#E27F21;}
+.mapInfo span{ padding:0 5px 0 3px;}
+.mapInfo b{ font-weight:normal; color:#2770B5}
+/*地图*/
+.svggroup path{opacity: 0.18;}
+.items{width: 650px; height: 516px; position: relative; overflow: hidden;}
+.location_text {color:#fff; font-family: "microsoft yahei"; font-size:12px; position: absolute; z-index: 3;}
+.heilongjiang {top: 75px;left: 533px;}
+.jilin {top:124px; left:534px;}
+.liaoning {top:155px; left:509px;}
+.hebei {top:178px; left:426px;}
+.beijing {top: 189px;left: 439px;}
+.tianjin {top: 201px; left: 455px;}
+.shangdong {top:234px; left:463px;}
+.jiangsu {top:277px; left:491px;}
+.shanghai {top:296px; left:530px;}
+.zhejiang {top:328px; left:502px;}
+.fujian {top:367px; left:489px;}
+.taiwan {top:400px; left:535px;}
+.guangdong {top: 424px;left: 430px;}
+.hainan {top: 479px;left: 394px;}
+.guangxi {top:422px; left:380px;}
+.yunnan {top:412px; left:283px;}
+.guizhou {top:380px; left:356px;}
+.jiangxi {top:369px; left:452px;}
+.anhui {top:300px; left:465px;}
+.henan {top:275px; left:421px;}
+.hubei {top:319px; left:411px;}
+.hunan {top:363px; left:403px;}
+.sichuan {top:323px; left:296px;}
+.chongqin {top:341px; left:355px;}
+.shanxi {top:213px; left:401px;}
+.sanxi {top:270px; left:363px;}
+.nmg {top:174px; left:380px;}
+.ningxia {top:235px; left:336px;}
+.gansu {top:220px; left:280px;}
+.qinhai {top:257px; left:220px;}
+.xinjiang {top:146px; left:119px;}
+.xizang {top:330px; left:140px;}
+
+/*.heilongjiang {top:65px; left:455px;}
+.jilin {top:105px; left:465px;}
+.liaoning {top:140px; left:440px;}
+.hebei {top:190px; left:385px;}
+.beijing {top:160px; left:390px;}
+.tianjin {top:170px; left:405px;}
+.shangdong {top:205px; left:410px;}
+.jiangsu {top:245px; left:430px;}
+.shanghai {top:265px; left:460px;}
+.zhejiang {top:285px; left:445px;}
+.fujian {top:330px; left:430px;}
+.taiwan {top:350px; left:460px;}
+.guangdong {top:365px; left:380px;}
+.hainan {top:420px; left:340px;}
+.guangxi {top:365px; left:330px;}
+.yunnan {top:355px; left:250px;}
+.guizhou {top:330px; left:305px;}
+.jiangxi {top:310px; left:400px;}
+.anhui {top:260px; left:410px;}
+.henan {top:240px; left:370px;}
+.hubei {top:275px; left:360px;}
+.hunan {top:320px; left:360px;}
+.sichuan {top:285px; left:265px;}
+.chongqin {top:296px; left:308px;}
+.shanxi {top:200px; left:355px;}
+.sanxi {top:240px; left:320px;}
+.nmg {top:120px; left:367px;}
+.ningxia {top:205px; left:300px;}
+.gansu {top:230px; left:280px;}
+.qinhai {top:220px; left:220px;}
+.xinjiang {top:140px; left:120px;}
+.xizang {top:275px; left:140px;}*/
+.sd{top:220px; left:410px;}
+.yuan{width: 48px; height: 48px; background: #000; overflow: hidden; position: absolute; z-index: 3; background: url(../../img/login/dot.png) no-repeat;}
+.hlj{top:65px; left:497px;}
+.jl{top:105px; left:502px;}
+.ln{top:158px; left:496px;}
+.heb{top:186px; left:417px;}
+.bj{top:181px; left:426px;}
+.tj{top:187px; left:440px;}
+.sd{top: 236px; left: 454px;}
+.js{top:280px; left:479px;}
+.sh{top:290px; left:508px;}
+.zj{top:330px; left:490px;}
+.fj{top:366px; left:475px;}
+.tw{top:398px; left:519px;}
+.gd{top:422px; left:411px;}
+.han {top:475px; left:379px;}
+.gx {top:419px; left:367px;}
+.yn {top:395px; left:245px;}
+.gz {top:380px; left:341px;}
+.jx {top:370px; left:442px;}
+.ah {top:301px; left:457px;}
+.hen {top:274px; left:404px;}
+.hb {top:314px; left:398px;}
+.hn {top:364px; left:391px;}
+.sc {top:308px; left:258px;}
+.cq {top:310px; left:352px;}
+.sx {top:218px; left:385px;}
+.sax {top:273px; left:346px;}
+.nx {top:236px; left:320px;}
+.gs {top:214px; left:285px;}
+.qh {top:223px; left:210px;}
+.xj {top:150px; left:105px;}
+.xz {top:317px; left:150px;}
+.maplocation {position: absolute; width:40px; height:52px; z-index: 5;}
+.maplocation img {width:100%;height:100%}
+.maplocation em{color: #fff; font-size: 12px; position: absolute; left: 6px; top: 7px; font-style: normal;}
+.maplocation .shadow {width:15px; height:9px; z-index: 1; top:18px;left:2px;}
+.qizi1{ top:114px; left:94px;}
+.qizi2{ top:264px; left:469px;}
+.qizi3{ top:295px; left:507px;}
+.qizi4{ top:269px; left:524px; z-index: 4;}
+.qizi5{ top:306px; left:517px;}
+.qizi6{ top:313px; left:506px;}
+@media screen and (max-width: 1920px) {
+    .login_main{
+        width: 1100px;
+        height: 500px;
+        margin: 9% auto 0;
+    }
+    .login_left{
+        width: 650px;
+        height: 668px;
+    }
+    .login_right{
+        width: 430px;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+    .login_from{
+        width: 430px;
+        height: 444px;
+        padding: 0 50px;
+    }
+    .form_title{
+        font-size: 28px;
+        padding: 35px 0;
+        margin-bottom: 30px;
+    }
+    .form_group{
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .form_group span{
+        height: 45px;
+        line-height: 45px;
+    }
+    .form_control{
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+    .code{
+        width: 76px;
+        height: 35px;
+        margin-top: 3px;
+    }
+    .code img{
+        height: 35px;
+    }
+    .login_from .btn_default{
+        width: 172px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 25px;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    .login_erro{
+        width: 181px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 10px;
+        right: -210px;
+        font-size: 14px;
+    }
+    .error_icon{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 10px;
+        background: url('../../img/login/erro_icon.png') no-repeat;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .login_left{
+        width: 650px;
+        height: 510px;
+    }
+    .login_right{
+        width: 359px;
+        margin-top: 40px;
+    }
+    .login_from{
+        width: 359px;
+        height: 369px;
+        padding: 0 36px;
+    }
+    .form_title{
+        font-size: 18px;
+        padding: 24px 0;
+        margin-bottom: 18px;
+    }
+    .form_group span{
+        height: 35px;
+        line-height: 35px;
+    }
+    .form_control{
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    .code{
+        width: 51px;
+        height: 28px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .login_from .btn_default{
+        width: 116px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 10px;
+        font-size: 14px;
+        margin-top: 47px;
+    }
+    .login_erro{
+        width: 166px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 12px;
+        right: -192px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .login_main{
+        width: 1050px;
+        margin: 20px auto 0;
+    }
+    .login_left{
+        width: 650px;
+        height: 510px;
+    }
+    .login_right{
+        width: 340px;
+        margin-top: 90px;
+    }
+    .login_from{
+        width: 340px;
+        height: 350px;
+        padding: 0 39px;
+    }
+    .form_title{
+        font-size: 18px;
+        padding: 24px 0;
+        margin-bottom: 18px;
+    }
+    .form_control{
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    .code{
+        width: 51px;
+        height: 28px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .login_from .btn_default{
+        width: 123px;
+        height: 33px;
+        line-height: 33px;
+        border-radius: 17px;
+        font-size: 14px;
+        margin-top: 35px;
+    }
+    .login_erro{
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 12px;
+        right: -156px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .login_main{
+        width: 1000px;
+        margin: 20px auto 0;
+    }
+    .login_left{
+        width: 650px;
+        height: 510px;
+    }
+    .login_right{
+        width: 319px;
+        margin-top: 80px;
+    }
+    .login_from{
+        width: 319px;
+        height: 328px;
+        padding: 0 36px;
+    }
+    .form_title{
+        font-size: 18px;
+        padding: 24px 0;
+        margin-bottom: 0;
+    }
+    .form_control{
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    .code{
+        width: 51px;
+        height: 28px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .login_from .btn_default{
+        width: 116px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 10px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .login_erro{
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 7px;
+        right: -164px;
+        font-size: 12px;
+    }
+    .error_icon{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 5px;
+        background: url('../../img/login/erro_icon.png') no-repeat;
+    }
+}
+
+
+

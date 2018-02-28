@@ -1,0 +1,99 @@
+html,body{overflow-x: hidden;}
+.white-bg{background: #fff;}
+.dashboard-header {border-top: 0; padding: 30px;}
+.product_title{width: 1200px; margin: 0 auto 40px; text-align: center;}
+.product_title .wow_names{display: block; text-align: center; color: #333333; text-transform:uppercase; font-size:24px;}
+.product_title .wow_names2{display: block; text-align: center; color: #e1e1e1; text-transform:uppercase; font-size:14px;}
+.product_title .advantage_ic{width: 25px; height: 4px; background: #328acd; overflow: hidden; margin: 5px auto 0; display: block;}
+.product_box{overflow: hidden;}
+.product_main{display: block; overflow: hidden;}
+.product_main li{height: 308px; overflow: hidden; margin-bottom: 25px;}
+.product_main .product_row2{width: 100%; height: 308px; border: solid 1px #e7e7e7; background: #faf9f9; float: left; overflow: hidden; border-radius: 5px;}
+.product_main .product_row2 .it_img{min-height: 150px;}
+.product_main .product_row2 img{
+	max-width: 190px; 
+	transition: all ease .3s; 
+	-moz-transition: all ease .3s; /* Firefox 4 */ 
+	-webkit-transition: all ease .3s; 
+	-o-transition: all ease .3s; 
+	vertical-align: top; 
+	display: block; margin: 0 auto 0;}
+.product_main .product_row2 .ct{ position: relative; text-align:center; overflow: hidden; display:inline-block; vertical-align: top; line-height:29px;}
+.product_main .product_row2 .it-box { text-align: center; z-index: 100; padding-top: 40px; transition: .5s; height: 308px;}
+.product_main .cn { font-size: 16px; color: #333333; display: block; position: relative; margin-bottom: 10px;  text-align: center; height: 30px; line-height: 30px;
+text-overflow:ellipsis;
+white-space: nowrap;
+	font-family: 'microsoft yahei'; 
+	-webkit-transition: -webkit-transform 0.3s; 
+	-moz-transition: -moz-transform 0.3s; 
+	transition: transform 0.3s; 
+	text-align: center; 
+	padding: 0 35px;
+}
+.product_main .en{font-size: 12px;color: #999; display: block; line-height: 20px; height: 130px; text-align: center; padding: 0 35px; font-family: 'sangam'; 
+	-webkit-transition: -webkit-transform 0.3s; 
+	-moz-transition: -moz-transform 0.3s; 
+	transition: transform 0.3s;
+}
+.product_main .cn:before{ position: absolute; top: 350%; color: #ffffff; content: attr(data-hover); font-weight: normal; text-align: center; display: block; width: 85%;}
+.product_main .en:before{ position: absolute; top: 168px; color: #c0d6ec; content: attr(data-hover); font-weight: normal; padding-right: 30px; }
+.product_main li .product_row2:hover .it-font .cn,.product_main li .product_row2:focus .it-font .cn,.product_main li.on .it-font .cn{ 
+	-webkit-transform: translateY(-230%); 
+	-ms-transform: translateY(-230%); 
+	-o-transform: translateY(-230%); 
+	transform: translateY(-230%);
+}
+.product_main li.on .it-font .en,.product_main li .product_row2:hover .it-font .en,.product_main li:focus .it-font .en { 
+	-webkit-transform: translateY(-110%); 
+	-ms-transform: translateY(-110%); 
+	-o-transform: translateY(-110%); 
+	transform: translateY(-110%);
+}
+.product_main li.on .it-box,.product_main li .product_row2:hover .it-box { background: #328acd; color:#fff;}
+.product_main li .product_row2:hover .it-font .cn , .product_main li.on .it-font .cn{color: #fff; }
+.product_main li .product_row2:hover .it-font .en , .product_main li.on .it-font .en{color: #fff;}
+.product_main li .product_row2:hover .it_img{
+	-webkit-transform: translateY(-155%); 
+	-ms-transform: translateY(-155%); 
+	-o-transform: translateY(-155%); 
+	transform: translateY(-155%); 
+	display: none;
+}
+.product_main .product_row2:hover .cn{
+	-webkit-transform: translateY(-100%); 
+	-ms-transform: translateY(-100%); 
+	-o-transform: translateY(-100%); 
+	transform: translateY(-100%);
+}
+body .product_more{display: block; width: 114px; height: 31px; line-height: 31px; border:solid 1px #fff; border-radius: 20px; text-align: center; color: #fff; margin: 0 auto 0; 
+	-webkit-transform: translateY(50%); 
+	-ms-transform: translateY(50%); 
+	-o-transform: translateY(50%); 
+	transform: translateY(50%); 
+	font-size: 14px;
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	margin-left: -57px;
+}
+body .product_main .product_row2:hover .product_more{display: block; 
+	-webkit-transform: translateY(-100%); 
+	-ms-transform: translateY(-100%); 
+	-o-transform: translateY(-100%); 
+	transform: translateY(-100%); 
+	font-size: 14px;
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	margin-left: -57px;
+}
+@media screen and (max-width: 1360px){
+	.product_main .cn, .product_main .en{
+		padding: 0 10px;
+	}
+}
+@media screen and (max-width: 1440px){
+	.product_main .cn, .product_main .en{
+		padding: 0 10px;
+	}
+}
